@@ -1,0 +1,70 @@
+Module Name
+SLF4J (Simple Logging Facade for Java)
+
+Student Name
+Pratyush Kumar Mohanty
+
+gmail: pratyushmohanty12345@gmail.com
+
+Roll Number
+23053320
+
+Repository
+Week1SLF4J
+
+Exercises Completed
+
+1. Exercise 1 - Logging Error Messages and Warning Levels
+   - Demonstrated ERROR and WARN level logging using SLF4J.
+   - Configured SLF4J with Logback.
+
+2. Exercise 2 - Parameterized Logging
+   - Demonstrated parameterized logging using {} placeholders.
+   - Logged variable values without string concatenation.
+
+3. Exercise 3 - Using Different Appenders
+   - Configured ConsoleAppender and FileAppender using logback.xml.
+   - Logged messages to both the console and the app.log file.
+
+Concepts Learned
+
+- Introduction to SLF4J
+- Logger and LoggerFactory
+- Log Levels (DEBUG, INFO, WARN, ERROR)
+- Parameterized Logging
+- Logback Integration
+- ConsoleAppender
+- FileAppender
+- Logback Configuration using logback.xml
+
+Tools and Technologies Used
+
+- Java
+- Maven
+- SLF4J 1.7.30
+- Logback Classic 1.2.3
+- IntelliJ IDEA
+- Git
+- GitHub
+
+Files Created
+
+- pom.xml
+- LoggingExample.java
+- ParameterizedLoggingExample.java
+- LoggingAppenderExample.java
+- logback.xml
+- .gitignore
+- Exercise1_Output.png
+- Exercise2_Output.png
+- Exercise3_Output.png
+
+Supporting Files Added
+
+- pom.xml (Required Maven build file)
+- .gitignore (Standard Git ignore file)
+- logback.xml (Required Logback configuration file for Exercise 3)
+
+Result
+
+Successfully completed all SLF4J hands-on exercises by implementing logging using SLF4J with Logback, demonstrating log levels, parameterized logging, and multiple appenders as specified in the Cognizant Digital Nurture 5.0 Java FSE handbook.
