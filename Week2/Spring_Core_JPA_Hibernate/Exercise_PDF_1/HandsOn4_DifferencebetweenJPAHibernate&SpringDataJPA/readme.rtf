@@ -1,0 +1,39 @@
+# Exercise 4 - Difference between JPA, Hibernate and Spring Data JPA
+
+## Objective
+To understand the relationship and differences between Java Persistence API (JPA), Hibernate, and Spring Data JPA, and to compare how each technology is used for implementing database operations in Java applications.
+
+## Reference
+- https://dzone.com/articles/what-is-the-difference-between-hibernate-and-sprin-1
+- https://www.javaworld.com/article/3379043/what-is-jpa-introduction-to-the-java-persistence-api.html
+
+## Topics Covered
+
+### 1. Java Persistence API (JPA)
+Studied JPA as the standard Java specification (JSR 338) for Object Relational Mapping (ORM). JPA defines a common set of interfaces and annotations for persisting Java objects but does not provide a concrete implementation.
+
+### 2. Hibernate
+Learned that Hibernate is an ORM framework and one of the most popular implementations of the JPA specification. Hibernate manages database interactions by converting Java objects into relational database records and vice versa.
+
+### 3. Spring Data JPA
+Studied Spring Data JPA as an abstraction layer built on top of JPA implementations such as Hibernate. It minimizes boilerplate code by providing ready-to-use repository interfaces, automatic query generation, and transaction management.
+
+### 4. Hibernate CRUD Implementation
+Observed how CRUD operations are implemented in Hibernate using components such as `SessionFactory`, `Session`, `Transaction`, `beginTransaction()`, `commit()`, `rollback()`, and methods like `session.save()` and `session.get()`. Hibernate requires developers to manually manage sessions and transactions.
+
+### 5. Spring Data JPA CRUD Implementation
+Learned how Spring Data JPA simplifies CRUD operations by using `JpaRepository`, `@Repository`, `@Service`, `@Autowired`, and `@Transactional`. Database operations such as save, update, delete, and fetch can be performed using built-in repository methods with minimal code.
+
+### 6. Comparison between Hibernate and Spring Data JPA
+Compared the implementation of CRUD operations in both frameworks and observed that Spring Data JPA significantly reduces the amount of code required by handling repository implementation, transaction management, and query execution automatically.
+
+## Key Differences
+
+| JPA | Hibernate | Spring Data JPA |
+|-----|-----------|-----------------|
+| Java Persistence Specification | ORM Framework implementing JPA | Abstraction layer built on top of JPA |
+| Defines standards only | Provides the actual implementation | Simplifies data access using repositories |
+| No implementation provided | Requires manual session and transaction handling | Provides automatic CRUD operations and transaction management |
+
+## Conclusion
+This hands-on is a walkthrough exercise based on the Cognizant DN 5.0 handout. It focuses on understanding the roles of JPA, Hibernate, and Spring Data JPA, and comparing their approaches for implementing persistence operations. No project implementation or coding was required for this exercise.
