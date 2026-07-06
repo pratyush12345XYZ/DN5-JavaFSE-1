@@ -1,0 +1,176 @@
+==========================================================
+           COGNIZANT DIGITAL NURTURE 5.0
+        JAVA FULL STACK ENGINEER (DN 5.0)
+
+              WEEK 2 - SPRING DATA JPA
+             HANDS-ON 1 : QUICK EXAMPLE
+==========================================================
+
+Student Name      : Pratyush Kumar Mohanty
+University Roll No: 23053320
+Registered Email  : pratyushmohanty12345@gmail.com
+
+----------------------------------------------------------
+Exercise Name
+----------------------------------------------------------
+
+Spring Data JPA - Quick Example
+
+----------------------------------------------------------
+Objective
+----------------------------------------------------------
+
+The objective of this exercise is to understand the basic
+implementation of Spring Data JPA with Hibernate. The
+exercise demonstrates how a Spring Boot application
+connects to a MySQL database, maps a Java class to a
+database table using JPA annotations, accesses data using
+JpaRepository, and retrieves records through the service
+layer.
+
+----------------------------------------------------------
+Software Used
+----------------------------------------------------------
+
+• Java 17
+• Spring Boot 3.5.16
+• Apache Maven
+• Eclipse IDE for Enterprise Java Developers
+• MySQL Server 8.0
+• MySQL Workbench 8
+• Git & GitHub
+
+----------------------------------------------------------
+Database Used
+----------------------------------------------------------
+
+Database Name : ormlearn
+
+Table Name : country
+
+Sample Records:
+
+IN  -> India
+US  -> United States of America
+
+----------------------------------------------------------
+Project Structure
+----------------------------------------------------------
+
+com.cognizant.ormlearn
+    ├── OrmLearnApplication.java
+
+com.cognizant.ormlearn.model
+    └── Country.java
+
+com.cognizant.ormlearn.repository
+    └── CountryRepository.java
+
+com.cognizant.ormlearn.service
+    └── CountryService.java
+
+src/main/resources
+    └── application.properties
+
+----------------------------------------------------------
+Concepts Covered
+----------------------------------------------------------
+
+• Spring Boot Project
+• Spring Data JPA
+• Hibernate
+• Entity Mapping
+• @Entity
+• @Table
+• @Id
+• @Column
+• JpaRepository
+• @Repository
+• @Service
+• @Transactional
+• Dependency Injection
+• MySQL Database Connectivity
+• Logging using SLF4J
+
+----------------------------------------------------------
+Work Completed
+----------------------------------------------------------
+
+1. Created Spring Boot Maven project.
+
+2. Configured Maven dependencies.
+
+3. Connected Spring Boot application with MySQL.
+
+4. Created "ormlearn" database.
+
+5. Created "country" table.
+
+6. Inserted sample records.
+
+7. Configured application.properties.
+
+8. Created Country entity.
+
+9. Created CountryRepository using JpaRepository.
+
+10. Created CountryService.
+
+11. Retrieved all countries using findAll().
+
+12. Displayed the retrieved records in the console.
+
+----------------------------------------------------------
+Supporting Changes
+----------------------------------------------------------
+
+The original handout uses older JPA (javax.persistence)
+imports. Since Spring Boot 3 uses Jakarta EE, the project
+was implemented using jakarta.persistence annotations.
+
+The MySQL table was created using the column names:
+
+code
+name
+
+The entity class was updated accordingly so that the JPA
+mapping matches the actual database schema.
+
+----------------------------------------------------------
+Output
+----------------------------------------------------------
+
+Application connected successfully to the MySQL database.
+
+All records from the country table were fetched using
+Spring Data JPA.
+
+Console Output:
+
+Country [code=IN, name=India]
+Country [code=US, name=United States of America]
+
+----------------------------------------------------------
+Result
+----------------------------------------------------------
+
+The application executed successfully. Spring Data JPA
+was configured correctly, Hibernate established the
+database connection, and the data was retrieved from
+MySQL using JpaRepository without any errors.
+
+----------------------------------------------------------
+Submitted By
+----------------------------------------------------------
+
+Name       : Pratyush Kumar Mohanty
+
+Roll No.   : 23053320
+
+Email       : pratyushmohanty12345@gmail.com
+
+Signature   : Pratyush Kumar Mohanty
+
+==========================================================
+                 END OF DOCUMENT
+==========================================================
