@@ -1,0 +1,45 @@
+# Exercise 2 - Hibernate XML Configuration Walkthrough
+
+## Objective
+To understand the working of Hibernate using XML configuration and learn how Hibernate performs CRUD operations through Session and Transaction APIs.
+
+## Reference
+https://www.tutorialspoint.com/hibernate/hibernate_examples.htm
+
+## Topics Covered
+
+### 1. Object Relational Mapping (ORM)
+Studied how Hibernate maps Java classes and objects to relational database tables using the `Employee.hbm.xml` mapping file.
+
+### 2. SessionFactory
+Learned that `SessionFactory` is responsible for reading the Hibernate configuration and creating `Session` objects.
+
+### 3. Session
+Understood that a `Session` represents a single connection with the database and is used to perform CRUD operations.
+
+### 4. Transaction
+Learned that a `Transaction` groups database operations into a single unit to ensure data consistency.
+
+### 5. beginTransaction()
+Starts a new database transaction before performing any database operation.
+
+### 6. commit()
+Commits the transaction and permanently saves all changes to the database.
+
+### 7. rollback()
+Rolls back the transaction if an error occurs, preventing partial updates.
+
+### 8. session.save()
+Used to insert a new object into the database.
+
+### 9. session.createQuery().list()
+Executes an HQL query and retrieves a list of records from the database.
+
+### 10. session.get()
+Retrieves a single object from the database using its primary key.
+
+### 11. session.delete()
+Deletes an existing object from the database.
+
+## Conclusion
+This hands-on is a walkthrough exercise based on the TutorialsPoint Hibernate XML example. No implementation was required as per the Cognizant DN 5.0 handout. The exercise focused on understanding Hibernate XML configuration and the complete CRUD workflow.
