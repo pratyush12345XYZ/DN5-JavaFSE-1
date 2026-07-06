@@ -1,0 +1,50 @@
+# Exercise 3 - Hibernate Annotation Configuration Walkthrough
+
+## Objective
+To understand how Hibernate uses annotations to perform Object Relational Mapping (ORM) between Java classes and database tables, and to learn the purpose of the commonly used JPA annotations and Hibernate configuration properties.
+
+## Reference
+https://www.tutorialspoint.com/hibernate/hibernate_annotations.htm
+
+## Topics Covered
+
+### 1. Object Relational Mapping (ORM) using Annotations
+Studied how Hibernate maps a Java persistence class (`Employee`) directly to a relational database table using annotations instead of XML mapping files. This annotation-based approach simplifies development and keeps mapping information within the entity class.
+
+### 2. @Entity
+Learned that the `@Entity` annotation marks a Java class as a persistent entity. It informs Hibernate that objects of this class should be stored and managed in the corresponding database table.
+
+### 3. @Table
+Studied the `@Table` annotation, which specifies the database table associated with the entity class. It allows developers to explicitly define the table name when it differs from the class name.
+
+### 4. @Id
+Learned that the `@Id` annotation identifies the primary key of the entity. Every persistent entity must have a unique identifier that Hibernate uses to perform CRUD operations.
+
+### 5. @GeneratedValue
+Studied how the `@GeneratedValue` annotation automatically generates values for the primary key using a specified generation strategy, eliminating the need to assign IDs manually.
+
+### 6. @Column
+Learned that the `@Column` annotation maps Java class fields to their corresponding database table columns. It can also be used to specify properties such as column name, length, nullability, and uniqueness.
+
+### 7. Hibernate Configuration (hibernate.cfg.xml)
+
+#### Dialect
+Specifies the SQL dialect used by Hibernate so that it generates SQL statements compatible with the target database.
+
+#### Driver
+Defines the JDBC driver class required to establish a connection with the database.
+
+#### Connection URL
+Specifies the JDBC URL containing the database host, port, and database name used for the connection.
+
+#### Username
+Defines the username used to authenticate with the database.
+
+#### Password
+Defines the password associated with the database user account.
+
+### 8. Annotation-Based ORM vs XML Mapping
+Compared annotation-based configuration with XML mapping and observed that annotations provide a cleaner, more maintainable, and widely adopted approach for configuring Hibernate applications.
+
+## Conclusion
+This hands-on is a walkthrough exercise based on the TutorialsPoint Hibernate Annotation example. It focuses on understanding annotation-based entity mapping and Hibernate configuration. No implementation or project creation was required as per the Cognizant DN 5.0 handout.
