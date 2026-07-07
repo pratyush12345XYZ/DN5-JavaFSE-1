@@ -1,0 +1,122 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-07-08T00:15:24.956+05:30  INFO 23040 --- [country-crud] [  restartedMain] c.c.countrycrud.CountryCrudApplication   : Starting CountryCrudApplication using Java 17.0.19 with PID 23040 (C:\Users\KIIT0001\Desktop\Deepskill\Week2\Spring_Core_JPA_Hibernate\Handon_FOlder1\HandOn5_CountryCRUD\country-crud\country-crud\target\classes started by KIIT0001 in C:\Users\KIIT0001\Desktop\Deepskill\Week2\Spring_Core_JPA_Hibernate\Handon_FOlder1\HandOn5_CountryCRUD\country-crud\country-crud)
+2026-07-08T00:15:24.961+05:30  INFO 23040 --- [country-crud] [  restartedMain] c.c.countrycrud.CountryCrudApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-07-08T00:15:25.096+05:30  INFO 23040 --- [country-crud] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-08T00:15:25.096+05:30  INFO 23040 --- [country-crud] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-08T00:15:26.334+05:30  INFO 23040 --- [country-crud] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-08T00:15:26.451+05:30  INFO 23040 --- [country-crud] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interface.
+2026-07-08T00:15:27.651+05:30  INFO 23040 --- [country-crud] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-07-08T00:15:27.674+05:30  INFO 23040 --- [country-crud] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-08T00:15:27.675+05:30  INFO 23040 --- [country-crud] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-08T00:15:27.766+05:30  INFO 23040 --- [country-crud] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-08T00:15:27.771+05:30  INFO 23040 --- [country-crud] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2669 ms
+2026-07-08T00:15:28.313+05:30  INFO 23040 --- [country-crud] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-08T00:15:28.476+05:30  INFO 23040 --- [country-crud] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-08T00:15:28.545+05:30  INFO 23040 --- [country-crud] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-07-08T00:15:29.042+05:30  INFO 23040 --- [country-crud] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-08T00:15:29.124+05:30  INFO 23040 --- [country-crud] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-08T00:15:29.580+05:30  INFO 23040 --- [country-crud] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@693ef161
+2026-07-08T00:15:29.583+05:30  INFO 23040 --- [country-crud] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-08T00:15:29.686+05:30  INFO 23040 --- [country-crud] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.46
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-08T00:15:31.149+05:30  INFO 23040 --- [country-crud] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-08T00:15:31.200+05:30  INFO 23040 --- [country-crud] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-08T00:15:32.159+05:30  WARN 23040 --- [country-crud] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-08T00:15:32.879+05:30  INFO 23040 --- [country-crud] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-08T00:15:32.968+05:30  INFO 23040 --- [country-crud] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-07-08T00:15:32.992+05:30  INFO 23040 --- [country-crud] [  restartedMain] c.c.countrycrud.CountryCrudApplication   : Started CountryCrudApplication in 8.834 seconds (process running for 9.549)
+========== Query 1 ==========
+2026-07-08T00:15:33.273+05:30 DEBUG 23040 --- [country-crud] [  restartedMain] org.hibernate.SQL                        : 
+    select
+        c1_0.co_code,
+        c1_0.co_name 
+    from
+        country c1_0 
+    where
+        c1_0.co_name like ? escape '\\'
+Hibernate: 
+    select
+        c1_0.co_code,
+        c1_0.co_name 
+    from
+        country c1_0 
+    where
+        c1_0.co_name like ? escape '\\'
+2026-07-08T00:15:33.279+05:30 TRACE 23040 --- [country-crud] [  restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [%ou%]
+Country [code=BV, name=Bouvet Island]
+Country [code=DJ, name=Djibouti]
+Country [code=GP, name=Guadeloupe]
+Country [code=GS, name=South Georgia and the South Sandwich Islands]
+Country [code=LU, name=Luxembourg]
+Country [code=SS, name=South Sudan]
+Country [code=TF, name=French Southern Territories]
+Country [code=UM, name=United States Minor Outlying Islands]
+Country [code=ZA, name=South Africa]
+
+========== Query 2 ==========
+2026-07-08T00:15:33.363+05:30 DEBUG 23040 --- [country-crud] [  restartedMain] org.hibernate.SQL                        : 
+    select
+        c1_0.co_code,
+        c1_0.co_name 
+    from
+        country c1_0 
+    where
+        c1_0.co_name like ? escape '\\' 
+    order by
+        c1_0.co_name
+Hibernate: 
+    select
+        c1_0.co_code,
+        c1_0.co_name 
+    from
+        country c1_0 
+    where
+        c1_0.co_name like ? escape '\\' 
+    order by
+        c1_0.co_name
+2026-07-08T00:15:33.365+05:30 TRACE 23040 --- [country-crud] [  restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [%ou%]
+Country [code=BV, name=Bouvet Island]
+Country [code=DJ, name=Djibouti]
+Country [code=TF, name=French Southern Territories]
+Country [code=GP, name=Guadeloupe]
+Country [code=LU, name=Luxembourg]
+Country [code=ZA, name=South Africa]
+Country [code=GS, name=South Georgia and the South Sandwich Islands]
+Country [code=SS, name=South Sudan]
+Country [code=UM, name=United States Minor Outlying Islands]
+
+========== Query 3 ==========
+2026-07-08T00:15:33.379+05:30 DEBUG 23040 --- [country-crud] [  restartedMain] org.hibernate.SQL                        : 
+    select
+        c1_0.co_code,
+        c1_0.co_name 
+    from
+        country c1_0 
+    where
+        c1_0.co_name like ? escape '\\'
+Hibernate: 
+    select
+        c1_0.co_code,
+        c1_0.co_name 
+    from
+        country c1_0 
+    where
+        c1_0.co_name like ? escape '\\'
+2026-07-08T00:15:33.380+05:30 TRACE 23040 --- [country-crud] [  restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [Z%]
+Country [code=ZM, name=Zambia]
+Country [code=ZW, name=Zimbabwe]
