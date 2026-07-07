@@ -1,0 +1,202 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-07-08T01:56:05.807+05:30  INFO 32884 --- [country-crud] [  restartedMain] c.c.countrycrud.CountryCrudApplication   : Starting CountryCrudApplication using Java 17.0.19 with PID 32884 (C:\Users\KIIT0001\Desktop\Deepskill\Week2\Spring_Core_JPA_Hibernate\Handon_FOlder1\HandOn5_CountryCRUD\country-crud\country-crud\target\classes started by KIIT0001 in C:\Users\KIIT0001\Desktop\Deepskill\Week2\Spring_Core_JPA_Hibernate\Handon_FOlder1\HandOn5_CountryCRUD\country-crud\country-crud)
+2026-07-08T01:56:05.817+05:30  INFO 32884 --- [country-crud] [  restartedMain] c.c.countrycrud.CountryCrudApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-07-08T01:56:05.932+05:30  INFO 32884 --- [country-crud] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-08T01:56:05.932+05:30  INFO 32884 --- [country-crud] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-08T01:56:07.124+05:30  INFO 32884 --- [country-crud] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-08T01:56:07.224+05:30  INFO 32884 --- [country-crud] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 2 JPA repository interfaces.
+2026-07-08T01:56:08.249+05:30  INFO 32884 --- [country-crud] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-07-08T01:56:08.270+05:30  INFO 32884 --- [country-crud] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-08T01:56:08.270+05:30  INFO 32884 --- [country-crud] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-08T01:56:08.350+05:30  INFO 32884 --- [country-crud] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-08T01:56:08.352+05:30  INFO 32884 --- [country-crud] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2417 ms
+2026-07-08T01:56:08.715+05:30  INFO 32884 --- [country-crud] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-08T01:56:08.831+05:30  INFO 32884 --- [country-crud] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-08T01:56:08.899+05:30  INFO 32884 --- [country-crud] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-07-08T01:56:09.406+05:30  INFO 32884 --- [country-crud] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-08T01:56:09.494+05:30  INFO 32884 --- [country-crud] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-08T01:56:09.895+05:30  INFO 32884 --- [country-crud] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21358acf
+2026-07-08T01:56:09.900+05:30  INFO 32884 --- [country-crud] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-08T01:56:10.073+05:30  INFO 32884 --- [country-crud] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.46
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-08T01:56:11.420+05:30  INFO 32884 --- [country-crud] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-08T01:56:11.478+05:30  INFO 32884 --- [country-crud] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-08T01:56:12.401+05:30  WARN 32884 --- [country-crud] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-08T01:56:13.042+05:30  INFO 32884 --- [country-crud] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-08T01:56:13.145+05:30  INFO 32884 --- [country-crud] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-07-08T01:56:13.158+05:30  INFO 32884 --- [country-crud] [  restartedMain] c.c.countrycrud.CountryCrudApplication   : Started CountryCrudApplication in 8.194 seconds (process running for 8.919)
+
+========== Query 1 ==========
+2026-07-08T01:56:13.389+05:30 DEBUG 32884 --- [country-crud] [  restartedMain] org.hibernate.SQL                        : 
+    select
+        s1_0.st_id,
+        s1_0.st_close,
+        s1_0.st_code,
+        s1_0.st_date,
+        s1_0.st_open,
+        s1_0.st_volume 
+    from
+        stock s1_0 
+    where
+        s1_0.st_code=? 
+        and s1_0.st_date between ? and ?
+Hibernate: 
+    select
+        s1_0.st_id,
+        s1_0.st_close,
+        s1_0.st_code,
+        s1_0.st_date,
+        s1_0.st_open,
+        s1_0.st_volume 
+    from
+        stock s1_0 
+    where
+        s1_0.st_code=? 
+        and s1_0.st_date between ? and ?
+2026-07-08T01:56:13.395+05:30 TRACE 32884 --- [country-crud] [  restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [FB]
+2026-07-08T01:56:13.395+05:30 TRACE 32884 --- [country-crud] [  restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (2:DATE) <- [2019-09-01]
+2026-07-08T01:56:13.395+05:30 TRACE 32884 --- [country-crud] [  restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (3:DATE) <- [2019-09-30]
+Stock [id=655, code=FB, date=2019-09-03, open=184.00, close=182.39, volume=9779400]
+Stock [id=658, code=FB, date=2019-09-04, open=184.65, close=187.14, volume=11308000]
+Stock [id=661, code=FB, date=2019-09-05, open=188.53, close=190.90, volume=13876700]
+Stock [id=664, code=FB, date=2019-09-06, open=190.21, close=187.49, volume=15226800]
+Stock [id=667, code=FB, date=2019-09-09, open=187.73, close=188.76, volume=14722400]
+Stock [id=670, code=FB, date=2019-09-10, open=187.44, close=186.17, volume=15455900]
+Stock [id=673, code=FB, date=2019-09-11, open=186.46, close=188.49, volume=11761700]
+Stock [id=676, code=FB, date=2019-09-12, open=189.86, close=187.47, volume=11419800]
+Stock [id=679, code=FB, date=2019-09-13, open=187.33, close=187.19, volume=11441100]
+Stock [id=682, code=FB, date=2019-09-16, open=186.93, close=186.22, volume=8444800]
+Stock [id=685, code=FB, date=2019-09-17, open=186.66, close=188.08, volume=9671100]
+Stock [id=688, code=FB, date=2019-09-18, open=188.09, close=188.14, volume=9681900]
+Stock [id=691, code=FB, date=2019-09-19, open=188.66, close=190.14, volume=10392700]
+Stock [id=694, code=FB, date=2019-09-20, open=190.66, close=189.93, volume=19934200]
+Stock [id=697, code=FB, date=2019-09-23, open=189.34, close=186.82, volume=13327600]
+Stock [id=700, code=FB, date=2019-09-24, open=187.98, close=181.28, volume=18546600]
+Stock [id=703, code=FB, date=2019-09-25, open=181.45, close=182.80, volume=18068300]
+Stock [id=706, code=FB, date=2019-09-26, open=181.33, close=180.11, volume=16083300]
+Stock [id=709, code=FB, date=2019-09-27, open=180.49, close=177.10, volume=14656200]
+Stock [id=712, code=FB, date=2019-09-30, open=177.87, close=178.08, volume=10740000]
+
+========== Query 2 ==========
+2026-07-08T01:56:13.462+05:30 DEBUG 32884 --- [country-crud] [  restartedMain] org.hibernate.SQL                        : 
+    select
+        s1_0.st_id,
+        s1_0.st_close,
+        s1_0.st_code,
+        s1_0.st_date,
+        s1_0.st_open,
+        s1_0.st_volume 
+    from
+        stock s1_0 
+    where
+        s1_0.st_code=? 
+        and s1_0.st_close>?
+Hibernate: 
+    select
+        s1_0.st_id,
+        s1_0.st_close,
+        s1_0.st_code,
+        s1_0.st_date,
+        s1_0.st_open,
+        s1_0.st_volume 
+    from
+        stock s1_0 
+    where
+        s1_0.st_code=? 
+        and s1_0.st_close>?
+2026-07-08T01:56:13.463+05:30 TRACE 32884 --- [country-crud] [  restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [GOOGL]
+2026-07-08T01:56:13.463+05:30 TRACE 32884 --- [country-crud] [  restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (2:NUMERIC) <- [1250]
+Stock [id=377, code=GOOGL, date=2019-04-22, open=1236.67, close=1253.76, volume=954200]
+Stock [id=380, code=GOOGL, date=2019-04-23, open=1256.64, close=1270.59, volume=1593400]
+Stock [id=383, code=GOOGL, date=2019-04-24, open=1270.59, close=1260.05, volume=1169800]
+Stock [id=386, code=GOOGL, date=2019-04-25, open=1270.30, close=1267.34, volume=1567200]
+Stock [id=389, code=GOOGL, date=2019-04-26, open=1273.38, close=1277.42, volume=1361400]
+Stock [id=392, code=GOOGL, date=2019-04-29, open=1280.51, close=1296.20, volume=3618400]
+
+========== Query 3 ==========
+2026-07-08T01:56:13.478+05:30 DEBUG 32884 --- [country-crud] [  restartedMain] org.hibernate.SQL                        : 
+    select
+        s1_0.st_id,
+        s1_0.st_close,
+        s1_0.st_code,
+        s1_0.st_date,
+        s1_0.st_open,
+        s1_0.st_volume 
+    from
+        stock s1_0 
+    order by
+        s1_0.st_volume desc 
+    limit
+        ?
+Hibernate: 
+    select
+        s1_0.st_id,
+        s1_0.st_close,
+        s1_0.st_code,
+        s1_0.st_date,
+        s1_0.st_open,
+        s1_0.st_volume 
+    from
+        stock s1_0 
+    order by
+        s1_0.st_volume desc 
+    limit
+        ?
+2026-07-08T01:56:13.478+05:30 TRACE 32884 --- [country-crud] [  restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [3]
+Stock [id=211, code=FB, date=2019-01-31, open=165.60, close=166.69, volume=77233600]
+Stock [id=28, code=FB, date=2018-10-31, open=155.00, close=151.79, volume=60101300]
+Stock [id=127, code=FB, date=2018-12-19, open=141.21, close=133.24, volume=57404900]
+
+========== Query 4 ==========
+2026-07-08T01:56:13.489+05:30 DEBUG 32884 --- [country-crud] [  restartedMain] org.hibernate.SQL                        : 
+    select
+        s1_0.st_id,
+        s1_0.st_close,
+        s1_0.st_code,
+        s1_0.st_date,
+        s1_0.st_open,
+        s1_0.st_volume 
+    from
+        stock s1_0 
+    where
+        s1_0.st_code=? 
+    order by
+        s1_0.st_close 
+    limit
+        ?
+Hibernate: 
+    select
+        s1_0.st_id,
+        s1_0.st_close,
+        s1_0.st_code,
+        s1_0.st_date,
+        s1_0.st_open,
+        s1_0.st_volume 
+    from
+        stock s1_0 
+    where
+        s1_0.st_code=? 
+    order by
+        s1_0.st_close 
+    limit
+        ?
+2026-07-08T01:56:13.490+05:30 TRACE 32884 --- [country-crud] [  restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [NFLX]
+2026-07-08T01:56:13.490+05:30 TRACE 32884 --- [country-crud] [  restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (2:INTEGER) <- [3]
+Stock [id=138, code=NFLX, date=2018-12-24, open=242.00, close=233.88, volume=9547600]
+Stock [id=135, code=NFLX, date=2018-12-21, open=263.83, close=246.39, volume=21397600]
+Stock [id=141, code=NFLX, date=2018-12-26, open=233.92, close=253.67, volume=14402700]
