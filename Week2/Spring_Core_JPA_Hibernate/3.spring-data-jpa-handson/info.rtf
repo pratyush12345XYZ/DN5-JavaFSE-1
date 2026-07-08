@@ -1,0 +1,161 @@
+Cognizant DN 5.0 Java FSE
+Week 2 – Spring Data JPA & Hibernate
+HQL, JPQL, Native Query & Criteria Query Hands-ons
+Objective
+
+The objective of these hands-on exercises is to understand and implement Hibernate Query Language (HQL), Java Persistence Query Language (JPQL), Native SQL Queries, and Criteria Queries using Spring Data JPA and Hibernate. These exercises demonstrate how Hibernate interacts with relational databases while working with Java entity objects instead of directly writing SQL statements.
+
+Hands-on 1 – Introduction to HQL and JPQL
+Objective
+
+To understand the basics of Hibernate Query Language (HQL) and Java Persistence Query Language (JPQL).
+
+Concepts Learned
+Introduction to HQL
+Introduction to JPQL
+Difference between SQL, HQL and JPQL
+Object-oriented querying using entity classes
+HQL supports SELECT, UPDATE, DELETE and INSERT operations.
+JPQL is a subset of HQL and supports SELECT, UPDATE and DELETE operations.
+Outcome
+
+Understood how HQL and JPQL operate on Java entity classes instead of database tables.
+
+Hands-on 2 – Get All Permanent Employees using HQL
+Objective
+
+Retrieve all permanent employees using Hibernate Query Language.
+
+Concepts Implemented
+Custom HQL query using @Query annotation
+Repository layer implementation
+Service layer implementation
+Application testing using Spring Boot
+Fetching associated Department and Skill entities
+Understanding FetchType.EAGER and FetchType.LAZY
+Optimizing HQL using JOIN FETCH
+Reducing unnecessary SQL queries
+Outcome
+
+Successfully retrieved all permanent employees along with their associated departments and skills using optimized HQL queries.
+
+Hands-on 3 – Fetch Quiz Attempt Details using HQL
+Objective
+
+Retrieve complete quiz attempt details including user information, questions, options, selected answers and scores.
+
+Concepts Implemented
+Complex HQL joins
+One-to-One, One-to-Many and Many-to-One mappings
+Multiple entity relationships
+JOIN FETCH usage
+Nested entity traversal
+Displaying structured quiz attempt details
+Additional Note
+
+The original learning materials referenced a quiz.mwb (MySQL Workbench Model) file for generating the SQL schema.
+
+However, this file was not provided in the official learning materials.
+
+To proceed with the hands-on as intended, a custom dummy quiz database schema and sample dataset were created based on the schema diagram and requirements described in the handout. This allowed successful implementation and testing of all required HQL queries while preserving the intended functionality of the exercise.
+
+Hands-on 4 – Get Average Salary using HQL
+Objective
+
+Calculate the average salary of employees in a department using HQL aggregate functions.
+
+Concepts Implemented
+AVG() aggregate function
+Parameter binding using @Param
+Dynamic HQL parameters
+Aggregate functions in Hibernate
+Outcome
+
+Successfully computed the average salary for a selected department.
+
+Hands-on 5 – Get All Employees using Native Query
+Objective
+
+Execute a native SQL query using Spring Data JPA.
+
+Concepts Implemented
+Native SQL Query
+nativeQuery = true
+Repository implementation
+Service implementation
+Displaying employee information
+Outcome
+
+Successfully retrieved all employee records using direct SQL instead of HQL.
+
+Hands-on 6 – Criteria Query
+Objective
+
+Understand the concept and importance of Hibernate Criteria Query.
+
+Concepts Learned
+Dynamic query generation
+Programmatic query creation
+Runtime filtering
+Dynamic WHERE clause generation
+Real-world filtering examples such as Amazon product search
+Outcome
+
+Understood how Criteria Query simplifies dynamic searching where query conditions depend on user-selected filters.
+
+Note: This hands-on was theory-based only and did not require any code implementation according to the provided learning material.
+
+Overall Learning Outcomes
+
+Through these six hands-on exercises, the following concepts were learned and implemented:
+
+Hibernate Query Language (HQL)
+Java Persistence Query Language (JPQL)
+Spring Data JPA Repository
+@Query Annotation
+JOIN FETCH
+Lazy Loading
+Eager Loading
+Aggregate Functions
+Parameter Binding using @Param
+Native SQL Queries
+Criteria Query Concepts
+Entity Relationships
+One-to-One Mapping
+One-to-Many Mapping
+Many-to-One Mapping
+Many-to-Many Mapping
+Hibernate SQL Generation
+Query Optimization
+Project Structure
+
+The project follows a layered architecture consisting of:
+
+Entity Classes
+Repository Layer
+Service Layer
+Main Spring Boot Application
+MySQL Database
+Hibernate ORM
+Software Used
+Java 17
+Spring Boot 3.5.x
+Spring Data JPA
+Hibernate ORM
+Maven
+MySQL Server 8.x
+MySQL Workbench
+Eclipse IDE for Enterprise Java Developers
+Important Note
+
+The official learning material for Hands-on 3 referenced a quiz.mwb file for database generation. Since this file was missing from the provided resources, a compatible database schema and representative sample data were manually created based on the schema diagram and functional requirements. This enabled successful completion and testing of the exercise while maintaining the intended learning objectives.
+
+All other hands-on exercises were implemented according to the provided Cognizant learning materials.
+
+Submitted By
+
+Name: Pratyush Kumar Mohanty
+
+University Roll Number: 23053320
+
+Registered Email: pratyushmohanty12345@gmail.com
