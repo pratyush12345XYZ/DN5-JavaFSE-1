@@ -1,0 +1,109 @@
+===========================================================
+           Cognizant DN 5.0 Java FSE Deep Skilling
+        Week 2 - Spring Data JPA & Hibernate Hands-ons
+===========================================================
+
+Project Information
+-------------------
+Project Name : ORM Learn / Country CRUD
+Module       : Spring Data JPA & Hibernate
+Week         : Week 2
+Hands-ons    : 1 to 6
+
+Summary of Work Completed
+-------------------------
+
+Hands-on 1:
+-----------
+Implemented Spring Data JPA Query Methods on the Country table.
+Created the required entity, repository and application classes to perform different query method operations and verified the outputs successfully.
+
+Hands-on 2:
+-----------
+Implemented Spring Data JPA Query Methods on the Stock table.
+
+Completed the following:
+- Created the Stock entity with appropriate JPA annotations.
+- Created StockRepository with required Query Methods.
+- Tested all required query scenarios:
+  * Facebook stock details for September 2019.
+  * Google stocks where closing price was greater than 1250.
+  * Top 3 highest transaction volume records.
+  * Lowest three Netflix stock prices.
+
+Note:
+The handout instructed the use of stock-data.csv to generate SQL statements using Microsoft Excel and create stock-data.sql. Since the required CSV file was not provided with the handout, the SQL file was used directly to populate the database, which produced the same required dataset and functionality.
+
+Hands-on 3:
+-----------
+Created the Payroll schema bean mapping.
+
+Completed the following:
+- Created Employee entity.
+- Created Department entity.
+- Created Skill entity.
+- Added appropriate JPA annotations.
+- Created repository interfaces for Employee, Department and Skill.
+
+Note:
+The handout referenced payroll.sql for automatic table creation and sample data insertion. As the payroll.sql file was not provided, equivalent payroll tables and sample dummy data were created manually in MySQL to continue the exercise exactly as required.
+
+Hands-on 4:
+-----------
+Implemented Many-to-One relationship between Employee and Department.
+
+Completed the following:
+- Created service layer classes.
+- Implemented @ManyToOne mapping.
+- Retrieved Employee along with Department.
+- Added a new Employee.
+- Updated Employee department.
+- Verified insert and update operations successfully using MySQL.
+
+Hands-on 5:
+-----------
+Implemented One-to-Many relationship between Department and Employee.
+
+Completed the following:
+- Added @OneToMany mapping.
+- Observed LazyInitializationException as instructed in the handout.
+- Modified FetchType to EAGER.
+- Successfully fetched Department along with Employee list.
+- Verified generated Hibernate SQL queries.
+
+Hands-on 6:
+-----------
+Implemented Many-to-Many relationship between Employee and Skill.
+
+Completed the following:
+- Added Many-to-Many mapping between Employee and Skill.
+- Created employee_skill mapping table relationship.
+- Observed LazyInitializationException before using EAGER fetch.
+- Changed FetchType to EAGER as instructed.
+- Successfully retrieved Employee along with Skill details.
+- Added a Skill to an Employee.
+- Verified the employee_skill mapping table in MySQL.
+
+Additional Notes
+----------------
+- All exercises were implemented using Spring Boot, Spring Data JPA, Hibernate and MySQL.
+- Hibernate-generated SQL statements were verified during every hands-on.
+- Database changes were validated using MySQL Workbench.
+- Wherever mandatory resource files were unavailable in the provided handout (such as payroll.sql and stock-data.csv), equivalent dummy data or the provided SQL dataset was used so that every objective of the hands-on could be completed successfully without changing the expected implementation.
+
+-----------------------------------------------------------
+Student Declaration
+-----------------------------------------------------------
+
+I hereby declare that the above hands-ons were completed as per the Cognizant DN 5.0 Java FSE Deep Skilling handouts. Wherever required files were missing from the provided material, equivalent dummy data or SQL scripts were created only to continue the implementation while preserving the intended functionality of the exercises.
+
+-----------------------------------------------------------
+
+Name               : Pratyush Kumar Mohanty
+University Roll No.: 23053320
+Registered Email   : pratyushmohanty12345@gmail.com
+
+Signature:
+Pratyush Kumar Mohanty
+
+===========================================================
