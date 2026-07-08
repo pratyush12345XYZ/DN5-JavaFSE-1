@@ -1,0 +1,142 @@
+1. What is HQL?
+
+HQL (Hibernate Query Language) is the query language provided by the Hibernate framework. Instead of working directly with database tables and columns, HQL works with Java entity classes and their properties.
+
+This means that developers write queries using Java class names and field names rather than database table names and column names.
+
+Example
+
+Suppose we have an entity class:
+
+@Entity
+public class Employee {
+    private int id;
+    private String name;
+    private double salary;
+}
+
+An HQL query would be:
+
+FROM Employee
+
+Here, Employee is the Java entity class, not the database table.
+
+2. What is JPQL?
+
+JPQL (Java Persistence Query Language) is the standard query language defined by the Java Persistence API (JPA).
+
+Like HQL, JPQL also works with entity classes and their attributes instead of database tables.
+
+Since JPQL is part of the JPA specification, it is supported by all JPA providers such as:
+
+Hibernate
+EclipseLink
+OpenJPA
+3. HQL and JPQL are Object-Oriented Query Languages
+
+Unlike SQL, HQL and JPQL do not directly access database tables.
+
+Instead, they work with:
+
+Java Entity Classes
+Entity Objects
+Entity Attributes
+Relationships between entities
+SQL Example
+SELECT * FROM employee;
+
+Here employee is a database table.
+
+HQL / JPQL Example
+FROM Employee
+
+Here Employee is a Java Entity Class.
+
+4. JPQL is a Subset of HQL
+
+JPQL contains only the standard features defined by JPA.
+
+Hibernate provides some additional features beyond the JPA specification.
+
+Therefore,
+
+Every JPQL query is a valid HQL query.
+Not every HQL query is a valid JPQL query.
+
+This is why JPQL is called a subset of HQL.
+
+5. Supported Operations
+
+Both HQL and JPQL support the following operations:
+
+SELECT
+
+Used to retrieve records.
+
+Example
+
+SELECT e FROM Employee e
+UPDATE
+
+Used to update existing records.
+
+Example
+
+UPDATE Employee e
+SET e.salary = 50000
+WHERE e.id = 1
+DELETE
+
+Used to delete records.
+
+Example
+
+DELETE FROM Employee e
+WHERE e.id = 1
+6. HQL Supports INSERT
+
+One important difference is that HQL supports the INSERT statement, whereas JPQL does not.
+
+Example
+
+INSERT INTO Employee(name, salary)
+SELECT e.name, e.salary
+FROM OldEmployee e
+
+This feature is available only in Hibernate.
+
+Difference Between SQL and HQL/JPQL
+SQL	HQL / JPQL
+Works with database tables	Works with Java entity classes
+Uses column names	Uses entity attributes
+Database dependent	Object-oriented
+Directly communicates with database	Works through Hibernate/JPA
+Difference Between HQL and JPQL
+HQL	JPQL
+Hibernate-specific	JPA standard
+Supports additional Hibernate features	Supports only JPA features
+Supports INSERT	Does not support INSERT
+Every JPQL query works in HQL	Not every HQL query works in JPQL
+Advantages of HQL and JPQL
+Object-oriented query language.
+Queries use Java entity classes instead of database tables.
+Reduces dependency on database-specific SQL.
+Easier to maintain when entity names remain unchanged.
+Supports relationships between entities.
+Improves code readability.
+Integrates seamlessly with Hibernate and JPA.
+Key Points
+HQL stands for Hibernate Query Language.
+JPQL stands for Java Persistence Query Language.
+Both are object-oriented query languages.
+They work with Java entity classes instead of database tables.
+JPQL is a subset of HQL.
+Both support SELECT, UPDATE, and DELETE operations.
+Only HQL supports the INSERT statement.
+HQL is Hibernate-specific, whereas JPQL is the standard query language defined by JPA.
+
+Prepared by:
+
+Name: Pratyush Kumar Mohanty
+University Roll Number: 23053320
+Registered Email: pratyushmohanty12345@gmail.com
