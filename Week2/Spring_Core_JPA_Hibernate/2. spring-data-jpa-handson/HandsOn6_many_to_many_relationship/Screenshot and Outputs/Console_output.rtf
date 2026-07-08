@@ -1,0 +1,250 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-07-08T23:44:05.972+05:30  INFO 43424 --- [country-crud] [  restartedMain] c.c.countrycrud.CountryCrudApplication   : Starting CountryCrudApplication using Java 17.0.19 with PID 43424 (C:\Users\KIIT0001\Desktop\Deepskill\Week2\Spring_Core_JPA_Hibernate\Handon_FOlder1\HandOn5_CountryCRUD\country-crud\country-crud\target\classes started by KIIT0001 in C:\Users\KIIT0001\Desktop\Deepskill\Week2\Spring_Core_JPA_Hibernate\Handon_FOlder1\HandOn5_CountryCRUD\country-crud\country-crud)
+2026-07-08T23:44:05.976+05:30  INFO 43424 --- [country-crud] [  restartedMain] c.c.countrycrud.CountryCrudApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-07-08T23:44:06.090+05:30  INFO 43424 --- [country-crud] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-08T23:44:06.091+05:30  INFO 43424 --- [country-crud] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-08T23:44:07.128+05:30  INFO 43424 --- [country-crud] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-08T23:44:07.259+05:30  INFO 43424 --- [country-crud] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 5 JPA repository interfaces.
+2026-07-08T23:44:08.297+05:30  INFO 43424 --- [country-crud] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-07-08T23:44:08.321+05:30  INFO 43424 --- [country-crud] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-08T23:44:08.321+05:30  INFO 43424 --- [country-crud] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-08T23:44:08.384+05:30  INFO 43424 --- [country-crud] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-08T23:44:08.386+05:30  INFO 43424 --- [country-crud] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2292 ms
+2026-07-08T23:44:08.698+05:30  INFO 43424 --- [country-crud] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-08T23:44:08.800+05:30  INFO 43424 --- [country-crud] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-08T23:44:08.894+05:30  INFO 43424 --- [country-crud] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-07-08T23:44:09.391+05:30  INFO 43424 --- [country-crud] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-08T23:44:09.468+05:30  INFO 43424 --- [country-crud] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-08T23:44:09.853+05:30  INFO 43424 --- [country-crud] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@299254d7
+2026-07-08T23:44:09.855+05:30  INFO 43424 --- [country-crud] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-08T23:44:10.034+05:30  INFO 43424 --- [country-crud] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.46
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-08T23:44:11.416+05:30  INFO 43424 --- [country-crud] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-08T23:44:11.532+05:30  INFO 43424 --- [country-crud] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-08T23:44:12.291+05:30  WARN 43424 --- [country-crud] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-08T23:44:12.931+05:30  INFO 43424 --- [country-crud] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-08T23:44:12.995+05:30  INFO 43424 --- [country-crud] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-07-08T23:44:13.014+05:30  INFO 43424 --- [country-crud] [  restartedMain] c.c.countrycrud.CountryCrudApplication   : Started CountryCrudApplication in 7.708 seconds (process running for 8.361)
+========== Add Skill To Employee ==========
+2026-07-08T23:44:13.114+05:30 DEBUG 43424 --- [country-crud] [  restartedMain] org.hibernate.SQL                        : 
+    select
+        e1_0.em_id,
+        e1_0.em_date_of_birth,
+        d1_0.dp_id,
+        d1_0.dp_name,
+        e1_0.em_name,
+        e1_0.em_permanent,
+        e1_0.em_salary,
+        sl1_0.es_em_id,
+        sl1_1.sk_id,
+        sl1_1.sk_name 
+    from
+        employee e1_0 
+    left join
+        department d1_0 
+            on d1_0.dp_id=e1_0.em_dp_id 
+    left join
+        employee_skill sl1_0 
+            on e1_0.em_id=sl1_0.es_em_id 
+    left join
+        skill sl1_1 
+            on sl1_1.sk_id=sl1_0.es_sk_id 
+    where
+        e1_0.em_id=?
+Hibernate: 
+    select
+        e1_0.em_id,
+        e1_0.em_date_of_birth,
+        d1_0.dp_id,
+        d1_0.dp_name,
+        e1_0.em_name,
+        e1_0.em_permanent,
+        e1_0.em_salary,
+        sl1_0.es_em_id,
+        sl1_1.sk_id,
+        sl1_1.sk_name 
+    from
+        employee e1_0 
+    left join
+        department d1_0 
+            on d1_0.dp_id=e1_0.em_dp_id 
+    left join
+        employee_skill sl1_0 
+            on e1_0.em_id=sl1_0.es_em_id 
+    left join
+        skill sl1_1 
+            on sl1_1.sk_id=sl1_0.es_sk_id 
+    where
+        e1_0.em_id=?
+2026-07-08T23:44:13.139+05:30 TRACE 43424 --- [country-crud] [  restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [4]
+2026-07-08T23:44:13.264+05:30 DEBUG 43424 --- [country-crud] [  restartedMain] org.hibernate.SQL                        : 
+    select
+        el1_0.em_dp_id,
+        el1_0.em_id,
+        el1_0.em_date_of_birth,
+        el1_0.em_name,
+        el1_0.em_permanent,
+        el1_0.em_salary,
+        sl1_0.es_em_id,
+        sl1_1.sk_id,
+        sl1_1.sk_name 
+    from
+        employee el1_0 
+    left join
+        employee_skill sl1_0 
+            on el1_0.em_id=sl1_0.es_em_id 
+    left join
+        skill sl1_1 
+            on sl1_1.sk_id=sl1_0.es_sk_id 
+    where
+        el1_0.em_dp_id=?
+Hibernate: 
+    select
+        el1_0.em_dp_id,
+        el1_0.em_id,
+        el1_0.em_date_of_birth,
+        el1_0.em_name,
+        el1_0.em_permanent,
+        el1_0.em_salary,
+        sl1_0.es_em_id,
+        sl1_1.sk_id,
+        sl1_1.sk_name 
+    from
+        employee el1_0 
+    left join
+        employee_skill sl1_0 
+            on el1_0.em_id=sl1_0.es_em_id 
+    left join
+        skill sl1_1 
+            on sl1_1.sk_id=sl1_0.es_sk_id 
+    where
+        el1_0.em_dp_id=?
+2026-07-08T23:44:13.266+05:30 TRACE 43424 --- [country-crud] [  restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [1]
+2026-07-08T23:44:13.309+05:30 DEBUG 43424 --- [country-crud] [  restartedMain] org.hibernate.SQL                        : 
+    select
+        s1_0.sk_id,
+        s1_0.sk_name 
+    from
+        skill s1_0 
+    where
+        s1_0.sk_id=?
+Hibernate: 
+    select
+        s1_0.sk_id,
+        s1_0.sk_name 
+    from
+        skill s1_0 
+    where
+        s1_0.sk_id=?
+2026-07-08T23:44:13.310+05:30 TRACE 43424 --- [country-crud] [  restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [2]
+2026-07-08T23:44:13.325+05:30 DEBUG 43424 --- [country-crud] [  restartedMain] org.hibernate.SQL                        : 
+    select
+        e1_0.em_id,
+        e1_0.em_date_of_birth,
+        d1_0.dp_id,
+        d1_0.dp_name,
+        e1_0.em_name,
+        e1_0.em_permanent,
+        e1_0.em_salary,
+        sl1_0.es_em_id,
+        sl1_1.sk_id,
+        sl1_1.sk_name 
+    from
+        employee e1_0 
+    left join
+        department d1_0 
+            on d1_0.dp_id=e1_0.em_dp_id 
+    left join
+        employee_skill sl1_0 
+            on e1_0.em_id=sl1_0.es_em_id 
+    left join
+        skill sl1_1 
+            on sl1_1.sk_id=sl1_0.es_sk_id 
+    where
+        e1_0.em_id=?
+Hibernate: 
+    select
+        e1_0.em_id,
+        e1_0.em_date_of_birth,
+        d1_0.dp_id,
+        d1_0.dp_name,
+        e1_0.em_name,
+        e1_0.em_permanent,
+        e1_0.em_salary,
+        sl1_0.es_em_id,
+        sl1_1.sk_id,
+        sl1_1.sk_name 
+    from
+        employee e1_0 
+    left join
+        department d1_0 
+            on d1_0.dp_id=e1_0.em_dp_id 
+    left join
+        employee_skill sl1_0 
+            on e1_0.em_id=sl1_0.es_em_id 
+    left join
+        skill sl1_1 
+            on sl1_1.sk_id=sl1_0.es_sk_id 
+    where
+        e1_0.em_id=?
+2026-07-08T23:44:13.326+05:30 TRACE 43424 --- [country-crud] [  restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [4]
+2026-07-08T23:44:13.332+05:30 DEBUG 43424 --- [country-crud] [  restartedMain] org.hibernate.SQL                        : 
+    select
+        el1_0.em_dp_id,
+        el1_0.em_id,
+        el1_0.em_date_of_birth,
+        el1_0.em_name,
+        el1_0.em_permanent,
+        el1_0.em_salary,
+        sl1_0.es_em_id,
+        sl1_1.sk_id,
+        sl1_1.sk_name 
+    from
+        employee el1_0 
+    left join
+        employee_skill sl1_0 
+            on el1_0.em_id=sl1_0.es_em_id 
+    left join
+        skill sl1_1 
+            on sl1_1.sk_id=sl1_0.es_sk_id 
+    where
+        el1_0.em_dp_id=?
+Hibernate: 
+    select
+        el1_0.em_dp_id,
+        el1_0.em_id,
+        el1_0.em_date_of_birth,
+        el1_0.em_name,
+        el1_0.em_permanent,
+        el1_0.em_salary,
+        sl1_0.es_em_id,
+        sl1_1.sk_id,
+        sl1_1.sk_name 
+    from
+        employee el1_0 
+    left join
+        employee_skill sl1_0 
+            on el1_0.em_id=sl1_0.es_em_id 
+    left join
+        skill sl1_1 
+            on sl1_1.sk_id=sl1_0.es_sk_id 
+    where
+        el1_0.em_dp_id=?
+2026-07-08T23:44:13.333+05:30 TRACE 43424 --- [country-crud] [  restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [1]
+Employee [id=4, name=Amit, salary=60000.00, permanent=true, dateOfBirth=2000-05-15, department=Department [id=1, name=HR]]
+[Skill [id=2, name=Spring Boot], Skill [id=2, name=Spring Boot]]
