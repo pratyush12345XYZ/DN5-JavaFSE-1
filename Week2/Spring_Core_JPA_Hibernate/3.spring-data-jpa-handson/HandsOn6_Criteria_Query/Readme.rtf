@@ -1,0 +1,189 @@
+# Hands-on 6 – Criteria Query
+
+## Objective
+
+The objective of this hands-on is to understand the concept of **Criteria Query** in Hibernate and JPA. Criteria Query is used to create **dynamic database queries** programmatically using Java instead of writing fixed HQL or SQL statements. It is especially useful when the search conditions are not known in advance and depend on user input.
+
+---
+
+# Introduction
+
+In real-world applications, users often search for information using multiple filters. Since the selected filters change every time, writing a separate HQL query for every possible combination is not practical.
+
+For example, consider an online shopping website like Amazon.
+
+A user searches for **"Laptop"**. Along with the search results, Amazon provides multiple filtering options such as:
+
+* Customer Rating
+* Hard Disk Size
+* RAM Size
+* CPU Speed
+* Operating System
+* Weight
+* Processor
+* Brand
+* Price Range
+
+The user may select only one filter, multiple filters, or no filters at all.
+
+Examples:
+
+* RAM = 16 GB
+* Brand = Dell
+
+or
+
+* RAM = 8 GB
+* SSD = 512 GB
+* Windows 11
+* Price < ₹70,000
+
+or
+
+* Brand = HP only
+
+Since the filter conditions keep changing, the WHERE clause of the query must also change dynamically. This is where Criteria Query becomes useful.
+
+---
+
+# What is Criteria Query?
+
+Criteria Query is a feature provided by Hibernate and JPA that allows developers to build database queries using Java objects instead of writing query strings.
+
+Unlike HQL, where the query is written as a fixed string, Criteria Query creates the query programmatically by adding conditions one by one.
+
+This makes the application more flexible, readable, and easier to maintain.
+
+---
+
+# Why Criteria Query is Needed
+
+If HQL is used, different combinations of filters require different query strings.
+
+Example:
+
+```sql
+WHERE ram = 16
+```
+
+```sql
+WHERE ram = 16
+AND brand = 'Dell'
+```
+
+```sql
+WHERE ram = 8
+AND price < 70000
+AND operating_system = 'Windows'
+```
+
+Maintaining many different HQL queries becomes difficult.
+
+Criteria Query solves this problem by allowing conditions to be added dynamically based on the filters selected by the user.
+
+---
+
+# Working of Criteria Query
+
+The Criteria API follows these basic steps:
+
+1. Create a `CriteriaBuilder`.
+2. Create a `CriteriaQuery` object.
+3. Define the entity (table) to query.
+4. Add conditions (predicates) dynamically.
+5. Execute the query and retrieve the result.
+
+Only the conditions selected by the user are added to the query before execution.
+
+---
+
+# Features of Criteria Query
+
+* Builds queries dynamically using Java code.
+* Eliminates the need to write multiple HQL statements.
+* Supports filtering based on user input.
+* Supports AND and OR conditions.
+* Supports sorting of results.
+* Supports pagination.
+* Supports aggregate functions like COUNT(), SUM(), AVG(), MIN(), and MAX().
+* Improves maintainability for complex search functionality.
+
+---
+
+# Advantages of Criteria Query
+
+* Dynamic query generation.
+* Type-safe and object-oriented approach.
+* Easy to maintain for applications with many search filters.
+* Database independent because it uses entity classes instead of database-specific SQL.
+* Reduces duplication of query strings.
+* Easier to extend when new search filters are introduced.
+
+---
+
+# HQL vs Criteria Query
+
+| HQL                                        | Criteria Query                                      |
+| ------------------------------------------ | --------------------------------------------------- |
+| Query is written as a string.              | Query is built programmatically using Java objects. |
+| Best for fixed queries.                    | Best for dynamic queries.                           |
+| Difficult to manage many optional filters. | Handles optional filters easily.                    |
+| Less flexible for user-driven searches.    | Highly flexible for user-driven searches.           |
+
+---
+
+# Real-World Example
+
+Suppose a shopping website allows customers to search for laptops.
+
+A customer may choose:
+
+* Brand = Dell
+* RAM = 16 GB
+* SSD = 512 GB
+* Price below ₹80,000
+
+Another customer may choose:
+
+* Brand = HP
+* Operating System = Windows 11
+
+Another customer may search only by:
+
+* Brand = Lenovo
+
+Since every search uses different conditions, Criteria Query dynamically builds the required WHERE clause based on the selected filters instead of using fixed HQL statements.
+
+---
+
+# Important Takeaways
+
+* Criteria Query is mainly used for dynamic searching.
+* It is ideal when the number of search conditions is unknown at compile time.
+* It improves flexibility, readability, and maintainability.
+* It avoids creating multiple HQL queries for different filter combinations.
+* Modern applications such as Amazon, Flipkart, Myntra, and other e-commerce websites commonly use dynamic filtering concepts similar to Criteria Query.
+
+---
+
+# Conclusion
+
+Criteria Query is a powerful feature of Hibernate and JPA that allows developers to construct dynamic and flexible queries using Java code. It is particularly useful for applications where users can search using multiple optional filters. Compared to fixed HQL queries, Criteria Query offers better flexibility, easier maintenance, and improved scalability for complex search operations.
+
+---
+
+# Reference
+
+* Hibernate Criteria Query Tutorial: https://howtodoinjava.com/hibernate/hibernate-criteria-queries-tutorial/ (Concept reference from the hands-on)
+* Additional reference on Criteria API concepts: https://www.baeldung.com/hibernate-criteria-queries
+* Overview of Hibernate Criteria API and common operations: https://www.tutorialspoint.com/hibernate/hibernate_criteria_queries.htm
+
+---
+
+**Submitted By**
+
+**Name:** Pratyush Kumar Mohanty
+
+**University Roll Number:** 23053320
+
+**Registered Email:** [pratyushmohanty12345@gmail.com](mailto:pratyushmohanty12345@gmail.com)
