@@ -1,0 +1,280 @@
+COGNIZANT DN 5.0 – JAVA FSE DEEP SKILLING PROGRAM SPRING DATA JPA AND
+HIBERNATE EMPLOYEE MANAGEMENT SYSTEM – EXERCISES 1 TO 10
+
+======================================================================
+OVERVIEW
+======================================================================
+
+This folder contains the implementation of ten exercises completed as
+part of the Cognizant DN 5.0 Java FSE Deep Skilling Program under the
+Spring Data JPA and Hibernate module.
+
+The exercises were implemented through an Employee Management System
+developed using Spring Boot, Spring Data JPA, Hibernate, H2 Database,
+Spring Web, and Maven. The exercises progressively covered project
+setup, entity mapping, repositories, CRUD operations, query methods,
+pagination and sorting, entity auditing, projections, data source
+configuration, and Hibernate-specific features.
+
+The project was developed and tested using Java 17 and Spring Boot 3.x.
+
+======================================================================
+TECHNOLOGIES AND TOOLS USED
+======================================================================
+
+-   Java 17
+-   Spring Boot 3.x
+-   Spring Data JPA
+-   Hibernate ORM
+-   Spring Web
+-   H2 In-Memory Database
+-   Lombok
+-   Maven
+-   Eclipse IDE
+-   RESTful Web Services
+-   Git and GitHub
+
+======================================================================
+EXERCISE 1 – EMPLOYEE MANAGEMENT SYSTEM: OVERVIEW AND SETUP
+======================================================================
+
+Objective: To initialize the Employee Management System Spring Boot
+project and configure the database connection.
+
+Work Completed: - Created a new Spring Boot project named
+EmployeeManagementSystem. - Added the required dependencies: - Spring
+Data JPA - H2 Database - Spring Web - Lombok - Configured
+application.properties for the H2 in-memory database. - Configured the
+H2 JDBC URL, driver, username, password, and Hibernate dialect. -
+Successfully started the Spring Boot application and verified the H2
+database connection.
+
+Concepts Learned: - Spring Boot project initialization - Maven
+dependency management - H2 in-memory database configuration - Basic
+Spring Boot application properties
+
+======================================================================
+EXERCISE 2 – EMPLOYEE MANAGEMENT SYSTEM: CREATING ENTITIES
+======================================================================
+
+Objective: To define the Employee and Department JPA entities and
+establish their relationship.
+
+Work Completed: - Created the Employee entity with the following
+fields: - id - name - email - department - Created the Department entity
+with the following fields: - id - name - Used JPA annotations such as: -
+@Entity - @Table - @Id - @GeneratedValue - Defined the relationship
+between Department and Employee. - Implemented the one-to-many
+relationship from Department to Employee and the corresponding
+employee-to-department mapping. - Verified that Hibernate successfully
+recognized the entity mappings.
+
+Concepts Learned: - JPA entities - Database table mapping - Primary key
+generation - Entity relationships - One-to-many and many-to-one mappings
+
+======================================================================
+EXERCISE 3 – EMPLOYEE MANAGEMENT SYSTEM: CREATING REPOSITORIES
+======================================================================
+
+Objective: To create Spring Data JPA repositories for Employee and
+Department entities.
+
+Work Completed: - Created EmployeeRepository. - Created
+DepartmentRepository. - Extended JpaRepository to obtain built-in CRUD
+functionality. - Added derived query methods as required. - Successfully
+verified that Spring Data JPA detected two repository interfaces.
+
+Concepts Learned: - Spring Data repositories - JpaRepository -
+Repository interfaces - Built-in CRUD operations - Derived query methods
+
+======================================================================
+EXERCISE 4 – EMPLOYEE MANAGEMENT SYSTEM: IMPLEMENTING CRUD OPERATIONS
+======================================================================
+
+Objective: To implement create, read, update, and delete operations for
+employees and departments.
+
+Work Completed: - Used JpaRepository methods for CRUD operations. -
+Created EmployeeController. - Created DepartmentController. -
+Implemented RESTful endpoints for employee operations. - Implemented
+RESTful endpoints for department operations. - Supported the basic
+operations: - Create - Read - Update - Delete - Successfully started the
+REST-enabled Spring Boot application.
+
+Concepts Learned: - RESTful API development - Spring REST controllers -
+HTTP-based CRUD operations - Integration of controllers with Spring Data
+JPA repositories
+
+======================================================================
+EXERCISE 5 – EMPLOYEE MANAGEMENT SYSTEM: DEFINING QUERY METHODS
+======================================================================
+
+Objective: To enhance repository functionality using custom query
+methods and named queries.
+
+Work Completed: - Defined custom query methods using Spring Data JPA
+method-name keywords. - Implemented custom queries using the @Query
+annotation. - Worked with @NamedQuery and @NamedQueries. - Verified
+successful repository initialization and query parsing.
+
+Concepts Learned: - Derived query methods - @Query - JPQL-based custom
+queries - @NamedQuery - @NamedQueries - Repository query customization
+
+======================================================================
+EXERCISE 6 – EMPLOYEE MANAGEMENT SYSTEM: IMPLEMENTING PAGINATION AND
+SORTING
+======================================================================
+
+Objective: To add pagination and sorting capabilities to employee search
+functionality.
+
+Work Completed: - Implemented pagination using Page and Pageable. -
+Added sorting functionality. - Combined pagination and sorting in the
+employee search endpoint. - Used Spring Data pagination and sorting
+support to retrieve data efficiently.
+
+Concepts Learned: - Page - Pageable - PageRequest - Sort - Pagination -
+Sorting - Combining pagination and sorting in REST APIs
+
+======================================================================
+EXERCISE 7 – EMPLOYEE MANAGEMENT SYSTEM: ENABLING ENTITY AUDITING
+======================================================================
+
+Objective: To track the creation and modification information of
+entities.
+
+Work Completed: - Enabled JPA auditing in the application. - Added
+auditing support to the entities. - Used auditing annotations
+including: - @CreatedBy - @LastModifiedBy - @CreatedDate -
+@LastModifiedDate - Configured the application to support automatic
+auditing information.
+
+Concepts Learned: - Spring Data JPA auditing - Entity lifecycle
+tracking - Creation metadata - Modification metadata - Automatic audit
+field management
+
+======================================================================
+EXERCISE 8 – EMPLOYEE MANAGEMENT SYSTEM: CREATING PROJECTIONS
+======================================================================
+
+Objective: To fetch only specific subsets of employee and department
+data.
+
+Work Completed: - Created interface-based projections. - Created
+class-based projections. - Used @Value where required to control
+projected values. - Used constructor expressions for class-based
+projection results. - Reduced unnecessary data retrieval by selecting
+only required fields.
+
+Concepts Learned: - Spring Data JPA projections - Interface-based
+projections - Class-based projections - @Value - Constructor
+expressions - Optimized data retrieval
+
+======================================================================
+EXERCISE 9 – EMPLOYEE MANAGEMENT SYSTEM: CUSTOMIZING DATA SOURCE
+CONFIGURATION
+======================================================================
+
+Objective: To understand and customize Spring Boot data source
+configuration.
+
+Work Completed: - Used Spring Boot auto-configuration for data source
+management. - Externalized database configuration using
+application.properties. - Configured the primary H2 in-memory
+database. - Worked with configuration concepts required for managing
+multiple data sources. - Verified successful connection to the
+configured primary database.
+
+Concepts Learned: - Spring Boot data source auto-configuration -
+Externalized configuration - application.properties - Data source
+customization - Multiple data source concepts
+
+======================================================================
+EXERCISE 10 – EMPLOYEE MANAGEMENT SYSTEM: HIBERNATE-SPECIFIC FEATURES
+======================================================================
+
+Objective: To use Hibernate-specific features for improved mapping
+behavior and performance.
+
+Work Completed: - Used Hibernate-specific annotations to customize
+entity behavior. - Applied @DynamicUpdate where appropriate. - Applied
+@BatchSize for optimized collection fetching. - Configured Hibernate
+dialect and additional Hibernate properties. - Added batch-processing
+configuration. - Implemented bulk employee operations using saveAll(). -
+Used transactional processing for batch operations. - Successfully
+started and verified the final application configuration.
+
+Concepts Learned: - Hibernate-specific annotations - @DynamicUpdate -
+@BatchSize - Hibernate dialect configuration - Hibernate performance
+properties - JDBC batch processing - Bulk database operations -
+Transactional processing
+
+======================================================================
+OVERALL LEARNING OUTCOMES
+======================================================================
+
+After completing all ten exercises, the following concepts were
+practiced:
+
+-   Creating and configuring a Spring Boot project
+-   Configuring an H2 in-memory database
+-   Creating JPA entities
+-   Mapping entity relationships
+-   Using Spring Data JpaRepository
+-   Performing CRUD operations
+-   Creating RESTful endpoints
+-   Writing derived query methods
+-   Using @Query for custom queries
+-   Defining named queries
+-   Implementing pagination
+-   Implementing sorting
+-   Enabling JPA auditing
+-   Creating interface-based projections
+-   Creating class-based projections
+-   Externalizing data source configuration
+-   Understanding multiple data source configuration
+-   Using Hibernate-specific annotations
+-   Configuring Hibernate properties
+-   Implementing batch processing
+
+======================================================================
+NOTES
+======================================================================
+
+-   The exercises were completed progressively using the same Employee
+    Management System domain.
+-   The implementation was developed according to the Cognizant DN 5.0
+    Spring Data JPA and Hibernate hands-on requirements.
+-   H2 was used as an in-memory database, so stored data is temporary
+    and is recreated when the application restarts.
+-   Some Spring Boot and Hibernate startup messages may appear as
+    warnings. These do not necessarily indicate application failure when
+    the application starts successfully and the required functionality
+    works.
+-   The project was tested by running the Spring Boot application and
+    verifying successful repository scanning, database connectivity,
+    Hibernate/JPA initialization, and web server startup.
+
+======================================================================
+CONCLUSION
+======================================================================
+
+The ten exercises provided practical experience with Spring Data JPA and
+Hibernate, beginning with basic project configuration and progressing
+through entity relationships, repositories, CRUD operations, custom
+queries, pagination, sorting, auditing, projections, data source
+configuration, and Hibernate-specific performance features.
+
+The completed work provides a strong foundation for developing
+database-driven enterprise applications using Spring Boot, Spring Data
+JPA, and Hibernate.
+
+======================================================================
+SIGNATURE
+======================================================================
+
+Name: Pratyush Kumar Mohanty University Roll Number: 23053320 Registered
+Email: pratyushmohanty12345@gmail.com
+
+Cognizant DN 5.0 – Java FSE Deep Skilling Program Spring Data JPA and
+Hibernate Module
