@@ -273,7 +273,8 @@ JPA, and Hibernate.
 SIGNATURE
 ======================================================================
 
-Name: Pratyush Kumar Mohanty University Roll Number: 23053320 Registered
+Name: Pratyush Kumar Mohanty 
+University Roll Number: 23053320 Registered
 Email: pratyushmohanty12345@gmail.com
 
 Cognizant DN 5.0 – Java FSE Deep Skilling Program Spring Data JPA and
