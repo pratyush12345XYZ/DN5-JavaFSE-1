@@ -1,0 +1,47 @@
+.home-container{
+    padding:40px;
+    text-align:center;
+}
+
+button{
+    margin-top:20px;
+    padding:10px 25px;
+    font-size:16px;
+    background:#1976d2;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:disabled{
+    background:gray;
+    cursor:not-allowed;
+}
+
+input{
+    margin-top:20px;
+    width:300px;
+    padding:10px;
+    font-size:16px;
+}
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    width:180px;
+    padding:20px;
+    background:#1976d2;
+    color:white;
+    border-radius:10px;
+}
+
+.card h2{
+    margin:0;
+    font-size:36px;
+}

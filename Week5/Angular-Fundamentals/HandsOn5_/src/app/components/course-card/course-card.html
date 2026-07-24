@@ -1,0 +1,50 @@
+<div class="course-card" [ngClass]="cardClasses">
+
+    <h3>{{ course.name }}</h3>
+
+    <p><strong>Code:</strong> {{ course.code }}</p>
+
+    <p
+    [ngStyle]="{
+        color: course.credits >= 5 ? 'green' : 'blue',
+        fontWeight: 'bold'
+    }">
+
+    <strong>Credits:</strong> {{ course.credits }}
+
+</p>
+    <div [ngSwitch]="course.gradeStatus">
+
+        <p *ngSwitchCase="'passed'">
+            ✅ Passed
+        </p>
+
+        <p *ngSwitchCase="'pending'">
+            ⌛ Pending
+        </p>
+
+        <p *ngSwitchCase="'failed'">
+            ❌ Failed
+        </p>
+
+    </div>
+
+    <button (click)="enroll()">
+        Enroll
+    </button>
+
+    <button (click)="toggleDetails()">
+        {{ isExpanded ? 'Hide Details' : 'Show Details' }}
+    </button>
+
+    <div *ngIf="isExpanded">
+
+        <hr>
+
+        <p>
+            This course contains practical assignments and assessments.
+        </p>
+
+    </div>
+
+</div>
