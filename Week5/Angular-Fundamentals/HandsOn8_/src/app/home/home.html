@@ -1,0 +1,51 @@
+<div class="home-container">
+
+    <h1>{{ portalName }}</h1>
+
+    <p>
+        Manage your courses, view your profile and track your academic progress
+        through this portal.
+    </p>
+
+    <button
+        [disabled]="!isPortalActive"
+        (click)="onEnrollClick()">
+
+        Enroll Now
+
+    </button>
+
+    <br><br>
+
+    <p>{{ message }}</p>
+
+    <hr>
+
+    <h3>Lifecycle Demo</h3>
+
+    <p>Status : {{ status }}</p>
+
+    <div class="stats">
+
+        <div class="card">
+            <h2>{{ courses.length }}</h2>
+            <p>Courses Available</p>
+        </div>
+
+        <div class="card">
+            <h2>3</h2>
+            <p>Enrolled</p>
+        </div>
+
+        <div class="card">
+            <h2>3.8</h2>
+            <p>GPA</p>
+        </div>
+
+    </div>
+
+    <app-course-summary-widget></app-course-summary-widget>
+    
+    <app-notification></app-notification>
+
+</div>
