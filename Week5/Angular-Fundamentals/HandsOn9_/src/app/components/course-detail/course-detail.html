@@ -1,0 +1,23 @@
+<div class="detail-container">
+  <div *ngIf="course; else notFound">
+    <h2>{{ course.name }}</h2>
+    <p><strong>Code:</strong> {{ course.code }}</p>
+    <p><strong>Credits:</strong> {{ course.credits }}</p>
+    <p><strong>Status:</strong> <span style="text-transform: capitalize;">{{ course.gradeStatus }}</span></p>
+    
+    <hr>
+    
+    <p>
+      This is the dedicated detail view for <strong>{{ course.name }}</strong>. 
+      In a real application, you could load the full course syllabus, schedule, and instructor details here.
+    </p>
+    
+    <a routerLink="/courses" class="back-link">Back to Courses</a>
+  </div>
+  
+  <ng-template #notFound>
+    <h2>Course Not Found</h2>
+    <p>The course ID you requested does not exist or is invalid.</p>
+    <a routerLink="/courses" class="back-link">Back to Courses</a>
+  </ng-template>
+</div>

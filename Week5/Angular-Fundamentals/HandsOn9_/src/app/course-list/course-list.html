@@ -1,0 +1,42 @@
+<h2>Available Courses</h2>
+
+<div style="margin-bottom: 20px;">
+  <input 
+    type="text" 
+    placeholder="Search Courses..." 
+    [(ngModel)]="searchTerm" 
+    (ngModelChange)="onSearchChange()"
+    style="padding: 8px; width: 100%; max-width: 400px; border-radius: 4px; border: 1px solid #ccc;">
+</div>
+
+<p *ngIf="error$ | async as errorMessage" style="color: red; font-weight: bold;">
+    {{ errorMessage }}
+</p>
+
+<p *ngIf="isLoading$ | async">
+    Loading courses...
+</p>
+
+<div
+    class="course-container"
+    *ngIf="!(isLoading$ | async)">
+
+    <app-course-card
+        *ngFor="let c of courses$ | async; trackBy: trackByCourseId"
+        appHighlight="lightblue"
+        [course]="c"
+        (enrollRequested)="onEnroll($event)">
+    </app-course-card>
+
+</div>
+
+<ng-container *ngIf="courses$ | async as coursesList">
+  <p *ngIf="coursesList.length === 0 && !(isLoading$ | async) && !(error$ | async)">
+    No courses found matching "{{ searchTerm }}".
+  </p>
+</ng-container>
+
+<p *ngIf="selectedCourseId">
+    <strong>Selected Course ID:</strong>
+    {{ selectedCourseId }}
+</p>

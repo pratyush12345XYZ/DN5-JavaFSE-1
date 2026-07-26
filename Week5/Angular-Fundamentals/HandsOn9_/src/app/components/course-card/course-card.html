@@ -1,0 +1,62 @@
+<div class="course-card" [ngClass]="cardClasses">
+
+    <h3>{{ course.name }}</h3>
+
+    <p><strong>Code:</strong> {{ course.code }}</p>
+
+    <p
+    [ngStyle]="{
+        color: course.credits >= 5 ? 'green' : 'blue',
+        fontWeight: 'bold'
+    }">
+
+    <strong>Credits:</strong> {{ course.credits }}
+
+</p>
+    <div [ngSwitch]="course.gradeStatus">
+
+        <p *ngSwitchCase="'passed'">
+            ✅ Passed
+        </p>
+
+        <p *ngSwitchCase="'pending'">
+            ⌛ Pending
+        </p>
+
+        <p *ngSwitchCase="'failed'">
+            ❌ Failed
+        </p>
+
+    </div>
+
+    <!-- Toggle between Enroll and Unenroll buttons based on NgRx Store state -->
+    <ng-container *ngIf="enrolledIds$ | async as enrolledIds">
+        <button *ngIf="!enrolledIds.includes(course.id)" (click)="enroll()">
+            Enroll
+        </button>
+        
+        <button *ngIf="enrolledIds.includes(course.id)" (click)="unenroll()">
+            Unenroll
+        </button>
+    </ng-container>
+
+    <button (click)="toggleDetails()">
+        {{ isExpanded ? 'Hide Details' : 'Show Details' }}
+    </button>
+
+    <!-- Navigation button to course details via RouterLink -->
+    <button [routerLink]="['/courses', course.id]">
+        View Full Details
+    </button>
+
+    <div *ngIf="isExpanded">
+
+        <hr>
+
+        <p>
+            This course contains practical assignments and assessments.
+        </p>
+
+    </div>
+
+</div>
