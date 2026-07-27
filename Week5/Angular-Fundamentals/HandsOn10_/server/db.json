@@ -1,0 +1,80 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Angular Fundamentals",
+      "code": "ANG101",
+      "credits": 4,
+      "gradeStatus": "passed"
+    },
+    {
+      "id": 2,
+      "name": "Spring Boot",
+      "code": "SPR201",
+      "credits": 5,
+      "gradeStatus": "pending"
+    },
+    {
+      "id": 3,
+      "name": "Microservices",
+      "code": "MIC301",
+      "credits": 4,
+      "gradeStatus": "failed"
+    },
+    {
+      "id": 4,
+      "name": "TypeScript Basics",
+      "code": "TS101",
+      "credits": 3,
+      "gradeStatus": "passed"
+    },
+    {
+      "id": 5,
+      "name": "Docker & Kubernetes",
+      "code": "DKR401",
+      "credits": 5,
+      "gradeStatus": "pending"
+    },
+    {
+      "name": "New Dynamic Course",
+      "code": "DYN999",
+      "credits": 3,
+      "gradeStatus": "pending",
+      "id": 6
+    }
+  ],
+  "students": [
+    {
+      "id": 101,
+      "name": "John Doe",
+      "email": "john@example.com"
+    },
+    {
+      "id": 102,
+      "name": "Jane Smith",
+      "email": "jane@example.com"
+    }
+  ],
+  "enrollments": [
+    {
+      "id": 1,
+      "studentId": 101,
+      "courseId": 1,
+      "preferredSemester": "Odd"
+    },
+    {
+      "id": 2,
+      "studentId": 102,
+      "courseId": 2,
+      "preferredSemester": "Even"
+    },
+    {
+      "studentName": "Bob Builder",
+      "preferredSemester": "Even",
+      "agreeToTerms": true,
+      "studentEmail": "bob@example.com",
+      "courseId": "ANG101",
+      "id": 3
+    }
+  ]
+}
