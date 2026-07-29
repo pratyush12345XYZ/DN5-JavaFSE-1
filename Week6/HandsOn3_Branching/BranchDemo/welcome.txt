@@ -1,0 +1,2 @@
+Welcome to Git Branching 
+This line was added in GitNewBranch 
