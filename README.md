@@ -1,5 +1,5 @@
 ﻿# DN5-JavaFSE
-This is the Git Repo of Pratyush Kumar Mohanty.. I am commiting daily... 
+This is the Git Repo of Pratyush Kumar Mohanty....
 ## Note for Anyone Using This Repository
 
 This repository is my original work and has been created as part of my learning and hands-on exercises.
